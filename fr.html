@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    body,
+    html {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .top-bar {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .brand {
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .nav-item {
+        text-decoration: none;
+        color: black;
+    }
+
+    .header {
+        position: relative;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .header-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    .highlight {
+        background-color: black;
+        opacity: 0.7;
+        padding: 0.5rem;
+    }
+
+    .subtext {
+        color: lightgrey;
+    }
+
+    .content {
+        max-width: 1564px;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .section-title {
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 0.5rem;
+    }
+
+    .projects-grid {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        position: relative;
+        flex: 1 1 22%;
+        box-sizing: border-box;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 0.5rem;
+    }
+
+    .team-grid {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .team-member {
+        flex: 1 1 22%;
+        text-align: center;
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+    }
+
+    .role {
+        color: grey;
+    }
+
+    .contact-button {
+        background-color: lightgrey;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid lightgrey;
+        box-sizing: border-box;
+    }
+
+    .submit-button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .map-container {
+        margin: 2rem 0;
+    }
+
+    .map-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer a {
+        color: green;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="top-bar">
+        <div class="navbar">
+            <a href="#home" style="color: black;" class="brand nav-item"><b>BR</b> Architects</a>
+            <div class="nav-links">
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="home">
+        <img class="header-image" src="	https://www.w3schools.com/w3images/architect.jpg" alt="Architecture">
+        <div class="header-text">
+            <h1><span class="highlight"><b>BR</b></span> <span class="subtext">Architects</span></h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="content">
+
+        <!-- Project Section -->
+        <div class="section" id="projects">
+            <h3 class="section-title">Projects</h3>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project">
+                <div class="project-label">Summer House</div>
+                <img src="	https://www.w3schools.com/w3images/house5.jpg" alt="House">
+            </div>
+            <div class="project">
+                <div class="project-label">Brick House</div>
+                <img src="	https://www.w3schools.com/w3images/house2.jpg" alt="House">
+            </div>
+            <div class="project">
+                <div class="project-label">Renovated</div>
+                <img src="	https://www.w3schools.com/w3images/house3.jpg" alt="House">
+            </div>
+            <div class="project">
+                <div class="project-label">Barn House</div>
+                <img src="	https://www.w3schools.com/w3images/house4.jpg" alt="House">
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section" id="about">
+            <h3 class="section-title">About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua...</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="	https://www.w3schools.com/w3images/team2.jpg" alt="John">
+                <h3>John Doe</h3>
+                <p class="role">CEO & Founder</p>
+                <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                    pellentesque elementum.</p>
+                <button class="contact-button">Contact</button>
+            </div>
+            <div class="team-member">
+                <img src="	https://www.w3schools.com/w3images/team1.jpg" alt="Jane">
+                <h3>Jane Doe</h3>
+                <p class="role">Architect</p>
+                <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                    pellentesque elementum.</p>
+                <button class="contact-button">Contact</button>
+            </div>
+            <div class="team-member">
+                <img src="	https://www.w3schools.com/w3images/team3.jpg" alt="Mike">
+                <h3>Mike Ross</h3>
+                <p class="role">Architect</p>
+                <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                    pellentesque elementum.</p>
+                <button class="contact-button">Contact</button>
+            </div>
+            <div class="team-member">
+                <img src="	https://www.w3schools.com/w3images/team4.jpg" alt="Dan">
+                <h3>Dan Star</h3>
+                <p class="role">Architect</p>
+                <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                    pellentesque elementum.</p>
+                <button class="contact-button">Contact</button>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section" id="contact">
+            <h3 class="section-title">Contact</h3>
+            <p>Lets get in touch and talk about your next project.</p>
+            <form action="/action_page.php" target="_blank">
+                <input class="form-input" type="text" placeholder="Name" required name="Name">
+                <input class="form-input" type="text" placeholder="Email" required name="Email">
+                <input class="form-input" type="text" placeholder="Subject" required name="Subject">
+                <input class="form-input" type="text" placeholder="Comment" required name="Comment">
+                <button class="submit-button" type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <!-- Map -->
+        <div class="map-container">
+            <img src="	https://www.w3schools.com/w3images/map.jpg" class="map-image" alt="Map">
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
